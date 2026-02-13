@@ -35,7 +35,7 @@ function findEmployeeById(employeeId) {
  }
 
 function findEmployeeBySpecialization() {
-    const foundEmployee = employees.find(employee => employee.specialization === Javascript);
+    const foundEmployee = employees.find(employee => employee.specialization === 'Javascript' );
     if (foundEmployee) {
     document.getElementById('employeesDetails').innerHTML =`<p>${foundEmployee.id}: ${foundEmployee.name}: ${foundEmployee.name} - ${foundEmployee.department} - $${foundEmployee.salary} - ${foundEmployee.specialization}</p>`;
     }
